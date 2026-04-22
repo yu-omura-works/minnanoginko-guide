@@ -1,6 +1,10 @@
 var d = new Date();
-document.getElementById('dateBadge').textContent = d.getFullYear() + '年' + (d.getMonth()+1) + '月 最新';
-document.title = '【最短翌日】みんなの銀行紹介コードで1000円！' + d.getFullYear() + '年' + (d.getMonth()+1) + '月最新の口座開設特典ガイド';
+var _y = d.getFullYear();
+var _m = d.getMonth() + 1;
+var _day = d.getDate();
+var _text = _y + '年' + _m + '月' + _day + '日最新';
+document.getElementById('dateBadge').textContent = _text;
+document.title = '【最短翌日】みんなの銀行紹介コードで1000円！' + _text + 'の口座開設特典ガイド';
 
 function copyText(btnId) {
   var text = 'WdMQHEHZ';
