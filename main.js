@@ -7,7 +7,7 @@ document.getElementById('dateBadge').textContent = _text;
 document.title = '【最短翌日】みんなの銀行 紹介コード・初回特典コードで1000円！' + _y + '年' + _m + '月最新ガイド';
 
 function copyText(btnId) {
-  var text = 'hAJXERuT';
+  var text = 'pSoAVgaU';
   if (navigator.clipboard && window.isSecureContext) {
     navigator.clipboard.writeText(text).then(function() { showCopied(btnId); }).catch(function() { fallbackCopy(text, btnId); });
   } else {
